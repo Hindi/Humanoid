@@ -753,6 +753,7 @@ ModelImporter:
     101490: WGT-VIS-thigh_pole.ik.R
     101492: WGT-VIS-upper_arm_pole.ik.L
     101494: WGT-VIS-upper_arm_pole.ik.R
+    101496: Cube
     400000: Camera
     400002: chest
     400004: DEF-chest
@@ -1501,6 +1502,7 @@ ModelImporter:
     401490: WGT-VIS-thigh_pole.ik.R
     401492: WGT-VIS-upper_arm_pole.ik.L
     401494: WGT-VIS-upper_arm_pole.ik.R
+    401496: Cube
     2300000: WGT-chest
     2300002: WGT-elbow_hose.L
     2300004: WGT-elbow_hose.R
@@ -1604,6 +1606,7 @@ ModelImporter:
     2300200: WGT-VIS-thigh_pole.ik.R
     2300202: WGT-VIS-upper_arm_pole.ik.L
     2300204: WGT-VIS-upper_arm_pole.ik.R
+    2300206: Cube
     3300000: WGT-chest
     3300002: WGT-elbow_hose.L
     3300004: WGT-elbow_hose.R
@@ -1707,6 +1710,7 @@ ModelImporter:
     3300200: WGT-VIS-thigh_pole.ik.R
     3300202: WGT-VIS-upper_arm_pole.ik.L
     3300204: WGT-VIS-upper_arm_pole.ik.R
+    3300206: Cube
     4300000: WGT-root
     4300002: WGT-thumb.03.R
     4300004: WGT-thumb.02.R
@@ -1812,6 +1816,7 @@ ModelImporter:
     4300204: WGT-torso
     4300206: Postava_MeshPart0
     4300208: Postava_MeshPart1
+    4300210: Cube
     7400000: rig|climb
     9500000: //RootNode
     13700000: Postava_MeshPart0

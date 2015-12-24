@@ -171,6 +171,7 @@ ModelImporter:
     100326: WGT-VIS-thigh_pole_ik_R
     100328: WGT-VIS-upper_arm_pole_ik_L
     100330: WGT-VIS-upper_arm_pole_ik_R
+    100332: Cube
     400000: //RootNode
     400002: ORG-chest
     400004: ORG-f_index_01_L
@@ -337,6 +338,7 @@ ModelImporter:
     400326: WGT-VIS-thigh_pole_ik_R
     400328: WGT-VIS-upper_arm_pole_ik_L
     400330: WGT-VIS-upper_arm_pole_ik_R
+    400332: Cube
     2300000: WGT-chest
     2300002: WGT-elbow_hose_L
     2300004: WGT-elbow_hose_R
@@ -440,6 +442,7 @@ ModelImporter:
     2300200: WGT-VIS-thigh_pole_ik_R
     2300202: WGT-VIS-upper_arm_pole_ik_L
     2300204: WGT-VIS-upper_arm_pole_ik_R
+    2300206: Cube
     3300000: WGT-chest
     3300002: WGT-elbow_hose_L
     3300004: WGT-elbow_hose_R
@@ -543,6 +546,7 @@ ModelImporter:
     3300200: WGT-VIS-thigh_pole_ik_R
     3300202: WGT-VIS-upper_arm_pole_ik_L
     3300204: WGT-VIS-upper_arm_pole_ik_R
+    3300206: Cube
     4300000: WGT-root
     4300002: WGT-thumb_03_R
     4300004: WGT-thumb_02_R
@@ -647,6 +651,7 @@ ModelImporter:
     4300202: WGT-spine
     4300204: WGT-torso
     4300206: Postava
+    4300208: Cube
     7400000: Default Take
     7400002: climb
     9500000: //RootNode
