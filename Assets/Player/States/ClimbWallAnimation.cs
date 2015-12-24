@@ -12,7 +12,6 @@ public class ClimbWallAnimation : StateAnimation
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
-        rigidbody.velocity = new Vector3(rigidbody.velocity.x, playerNavigation.JumpPower / 2, rigidbody.velocity.z);
         Collider collider = playerNavigation.getFrontCollider();
         if(collider)
         {
@@ -20,8 +19,12 @@ public class ClimbWallAnimation : StateAnimation
             Vector3 target = bounds.ClosestPoint(player.transform.position);
             Vector3 playerPosition = player.transform.position;
             player.transform.LookAt(target);
-
+            Vector3 jumpTarget = target;
+            jumpTarget.y = bounds.max.y;
             playerNavigation.findHandsPositions(ref targetLeft, ref targetRight, bounds);
+            animator.MatchTarget(jumpTarget,player.transform.rotation, AvatarTarget.LeftFoot,
+                                                       new MatchTargetWeightMask(Vector3.one, 1f), 0.05f, 1f);
+            player.GetComponent<CapsuleCollider>().enabled = false;
         }
     }
 
@@ -31,9 +34,10 @@ public class ClimbWallAnimation : StateAnimation
 	//}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-	//override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-	//
-	//}
+	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        player.GetComponent<CapsuleCollider>().enabled = true;
+    }
 
 	// OnStateMove is called right after Animator.OnAnimatorMove(). Code that processes and affects root motion should be implemented here
 	//override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {

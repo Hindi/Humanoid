@@ -185,7 +185,7 @@ public class PlayerNavigation : MonoBehaviour
         }
     }
 
-    public void OnAnimatorMove()
+    /*public void OnAnimatorMove()
     {
         // we implement this function to override the default root motion.
         // this allows us to modify the positional speed before it's applied.
@@ -197,7 +197,7 @@ public class PlayerNavigation : MonoBehaviour
             v.y = myRigidbody.velocity.y;
             myRigidbody.velocity = v;
         }
-    }
+    }*/
 
     public void handleGroundMovement()
     {

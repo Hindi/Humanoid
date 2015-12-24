@@ -9,7 +9,6 @@ public class JumpMachine : BaseMachine
     // OnStateMachineEnter is called when entering a statemachine via its Entry Node
     override public void OnStateMachineEnter(Animator animator, int stateMachinePathHash)
     {
-        animator.applyRootMotion = false;
         base.OnStateMachineEnter(animator, stateMachinePathHash);
         if (playerNavigation.getFrontCollider())
             animator.SetTrigger("FaceWall");

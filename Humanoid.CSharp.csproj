@@ -84,9 +84,6 @@
     <Compile Include="Assets\Player\States\StateAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />
-    <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
   </ItemGroup>

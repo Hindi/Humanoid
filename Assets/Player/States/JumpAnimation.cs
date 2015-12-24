@@ -10,6 +10,7 @@ public class JumpAnimation : StateAnimation
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
+        animator.applyRootMotion = false;
         rigidbody.velocity = new Vector3(rigidbody.velocity.x, playerNavigation.JumpPower, rigidbody.velocity.z);
         shouldLand = false;
         animator.ResetTrigger("Land");
